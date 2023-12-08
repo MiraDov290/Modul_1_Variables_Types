@@ -160,6 +160,137 @@
 
 
 
+//Приклад 1.Математичні оператори
+//Виведи на екран загальну кількість яблук та винограду. Різницю яблук ьа винограду
+
+// const apples = 47;
+// const grapes = 135;
+// const total = apples + grapes;
+// console.log(total);
+
+// const diff = grapes - apples;
+// console.log(diff);
+
+
+
+
+
+
+//Приклад 2.Комбіновані оператори
+//Заміни вираз перевизначення комбінованим оператором +=
+
+// let students = 100;
+// students = students + 50;// or students += 50;
+// console.log(students);
+
+
+
+
+
+//Приклад 3.Пріоритет операторів
+//Розбери пріоритет операторів в інструкції привласнення значення змінної result
+
+// const result = 108 + 223 - 2 * 5;
+// const result2 = 108 + (223 - 2) * 5;
+// console.log(result);
+// console.log(result2);
+
+
+
+
+
+//Приклад 4.Клас Math
+//Напиши скрипт, який виводить у консоль заокруглені вгору/вниз і т.д. значення змінної value.
+// Використовуй методи Math.floor(), Math.ceil() та Math.round().
+// Перевір що буде в консолі при значеннях 27.3 та 27.9
+
+// const value = 27.51;
+// console.log(Math.round(value));//28
+// console.log(Math.floor(value));//27
+// console.log(Math.ceil(value));//28
+
+// console.log(value.toFixed(1));//27.5
+
+
+
+
+
+
+
+//Приклад 5.Шаблонні рядки
+//Складіть  речення за допомогою рядків А has B bots in stock, де A, B - змінні вставлені в рядок
+
+// const companyName = 'Cyberdyne Systems';
+// const repairBots = 150;
+// const defenceBots = 50;
+// const message = `${companyName} has ${repairBots + defenceBots} bots in stock`;
+// console.log(message);//Cyberdyne Systems has 200 bots in stock
+
+
+
+
+
+
+//Приклад 6.Методи рядків та чейнінг
+//Напиши скрипт, який розраховує індекс маса тіла людини.
+//Для цього необхідно розділити вагу в кільметрах на квадрат висоти людини у метрах.
+
+//Вага та висота зберігається у змінних weight та height, але не як числа, а в вигляді (спеціально за завданням).
+//На цілі числа можуть бути задані у вигляді 24.7 або 24,7, тобто як роздільник дробової частини може бути кома.
+
+//Індекс маси тіла необхідно округлити до однієї цифри після коми;
+
+// let weight = '88,3';
+// let height = '1.75';
+// weight = Number(weight.replace(',', '.'));
+// console.log(weight);//88.3
+
+// const bmi = Number((weight / Math.pow(height, 2)).toFixed(1));
+// console.log(bmi);//28.8
+
+
+
+
+
+
+//Приклад 7.Яким буде результат виразів?
+//https://unicode-table.com/en/#0031
+// console.log(5 > 4);//true
+// console.log(10 >= '77');//false
+// console.log('2' >= '2');//true
+// console.log('A' > 'a');//false
+// console.log('2' < '12');//false
+// console.log('4' == 4);//true
+// console.log('6' === 6);//false
+// console.log('false' === false);//false
+// console.log(1 == true);//true
+// console.log(1 === true);//false
+// console.log('0' == false);//true
+// console.log('0' === false);//false
+// console.log('Papaya' < 'papaya');//true
+// console.log('Papaya' === 'papaya');//false
+
+
+
+
+
+//Логічні оператори: &&-i, ||-або, 
+// console.log(true && 3);//3
+// console.log(false && 3);//false
+// console.log(true && 4 && 'kiwi');//kiwi
+// console.log(true && 0 && 'kiwi');//0
+
+// console.log(true || 3);//true
+// console.log(0 || true || 4);//true
+// console.log('dfghhg' || false || 7);//dfghhg
+// console.log(null || 2 || undefined);//2
+
+
+
+
+
+
+
 
 
 
